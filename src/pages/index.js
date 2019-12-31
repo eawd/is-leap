@@ -38,13 +38,12 @@ export default () => {
             )
         ) {
             newState.year = toArabic(e.target.value);
+            hideRef.current.textContent = newState.year;
+            newState.txtWidth = hideRef.current.offsetWidth + 'px';
+            newState.isLeap = isLeap(val);
+
+            setState(newState);
         }
-
-        hideRef.current.textContent = newState.year;
-        newState.txtWidth = hideRef.current.offsetWidth + 'px';
-        newState.isLeap = isLeap(val);
-
-        setState(newState);
     };
 
     useEffect(() => onChange({target: {value: "2020"}}), []);
