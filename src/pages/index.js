@@ -59,13 +59,16 @@ export default () => {
             ? <Helmet title="سنة كبيسة 🎉" defer={false} />
             : <Helmet title="سنة عادية 🤨" defer={false} />
         }
+
         <h1>
             هي
             <span className={"hide"} ref={hideRef}>2020</span>
             <input className={"txt"} style={{width: state.txtWidth}} value={state.year} onChange={onChange}/>
             سنة كبيسة؟
         </h1>
+
         <br />
+
         <h2>
             {state.isLeap ? 'آه' : 'لأ'}
         </h2>
