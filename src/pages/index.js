@@ -72,7 +72,9 @@ export default () => {
 
         <br />
 
-        <a href="https://eawd.me">ارجع للرئيسية</a> | <a href="https://ar.wikipedia.org/wiki/%D8%B3%D9%86%D8%A9_%D9%83%D8%A8%D9%8A%D8%B3%D8%A9" target="_blank">معلومات اكتر</a>
+        <a href="https://eawd.me">ارجع للرئيسية</a>
+        |
+        <a href="https://ar.wikipedia.org/wiki/%D8%B3%D9%86%D8%A9_%D9%83%D8%A8%D9%8A%D8%B3%D8%A9" target="_blank">معلومات اكتر</a>
     </div>
     );
 };
