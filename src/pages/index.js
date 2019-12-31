@@ -1,5 +1,6 @@
 import React, { useState, useEffect, createRef } from "react"
 import { toInt, toArabic, fromArabic } from "../utils/numbers";
+import Helmet from "react-helmet";
 
 const initialState = {
     year: 2020,
@@ -50,6 +51,11 @@ export default () => {
 
     return (
     <div className={"container"}>
+        {
+            state.isLeap
+            ? <Helmet title="سنة كبيسة 🎉" defer={false} />
+            : <Helmet title="سنة عادية 🤨" defer={false} />
+        }
         <h1>
             هي
             <span className={"hide"} ref={hideRef}>2020</span>
