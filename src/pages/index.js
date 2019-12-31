@@ -65,6 +65,10 @@ export default () => {
         <h2>
             {state.isLeap ? 'آه' : 'لأ'}
         </h2>
+
+        <br />
+
+        <a href="https://eawd.me">ارجع للرئيسية</a>
     </div>
     );
 };

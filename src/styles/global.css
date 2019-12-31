@@ -30,6 +30,10 @@ h1, .hide, .txt {
     white-space: pre;
 }
 
+a, a:visited {
+    color: #0270EE;
+}
+
 h2 {
     font-size: 20rem;
     color: #212121;
